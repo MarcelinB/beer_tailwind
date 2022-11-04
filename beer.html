@@ -98,7 +98,7 @@
     </div> 
     
     <div class="md:absolute -mt-48 md:mt-0">
-        <div class="flex flex-col h-screen w-screen lg:hidden -mb-96 md:mb-0">
+        <div class="flex flex-col h-screen w-screen lg:hidden">
             <div class="h-1/3">
                 <img src="/assets/medailledor.png" alt="" class="absolute w-16 ml-2 mt-2">
                 <img src="/assets/biere1.png" alt="biere" class="">
@@ -135,8 +135,8 @@
         </div>
         
         <!--Screen 2-->
-        <div class="invisible md:visible">
-            <div class="top-0 w-3/4 bg-[#9EB358] w-full h-full min-h-screen z-1">
+        <div class="hidden md:grid">
+            <div class="top-0 w-3/4 bg-[#9EB358]  h-full min-h-screen z-1">
                 <img src="/assets/champ1.png" alt="" class="opacity-10 h-screen w-screen"/>
             </div>
             
@@ -178,7 +178,7 @@
                 <img src="/assets/biere1.png" alt="biere" >
             </div>
         </div>
-        <div class="flex flex-col-reverse h-screen w-screen md:flex-row absolute -mt-96 md:mt-0">
+        <div class="flex flex-col-reverse h-screen w-screen md:flex-row absolute">
             <!--Version large -> partie gauche-->
             <div class="flex flex-col bg-[#E2A306] md:bg-white md:justify-end md:items-center md:w-1/3 md:mb-16">
                 <div class="flex flex-row w-full justify-center">
@@ -197,12 +197,12 @@
                 </div>
             </div>
             <!--Version large -> partie droite-->
-            <div class="h-screen md:w-screen md:h-screen w-screen bg-[#E2A306]">
+            <div class="w-screen h-screen md:w-screen md:h-screen w-screen bg-[#E2A306]">
                 <div class="h-2/3 invisible md:visible md:h-screen md:w-full">
                     <img src="/assets/champ2.png" alt="" class="md:h-full md:opacity-5 "/>
                 </div>
     
-                <div class="flex flex-col absolute top-0 md:flex md:flex-row md:justify-between md:items-center md:absolute md:left-0 md:bottom-1/4">
+                <div class="flex flex-col absolute top-0 md:flex md:flex-row md:justify-between md:items-center md:items-center md:absolute md:left-0 md:bottom-1/4">
                     <img src="/assets/biere2.png" alt="" class="md:w-1/2 border-y-8 border-r-8 border-white">
                     <div class="text-black md:w-1/3 md:mr-16">
                         <h2 class="text-center tracking-widest font-LustScript text-6xl my-8 md:text-8xl">·  La Bio  ·</h2>

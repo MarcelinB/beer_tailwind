@@ -11,16 +11,16 @@
       
     <title>Document</title>
 </head>
-<body>
+<body class='overflow-x-hidden'>
     <!--Background pour grand écran-->
-    <div class='md:bg-bar bg-cover h-screen w-screen bg-bottom bg-no-repeat '>
+    <div class='md:bg-bar bg-cover h-screen w-screen bg-bottom bg-no-repeat'>
        
         <!--Header grand écran-->
 
         <div class=' mt-0 pt-0  h-24 bg-fixed bg-white opacity-70 hidden md:grid grid-cols-6 '>
 
             <div class=' flex justify-center '>
-                <img src="img/logobiere.png" alt="" class="w-40 h-40 ">
+                <img src="assets/logobiere.png" alt="" class="w-40 h-40 ">
             </div>
 
             <div class='col-start-3 flex justify-center pt-8 font-Alphapipe text-2xl font-bold'>
@@ -43,37 +43,48 @@
         <!--Header mobile-->
 
         <div class='h-16 bg-fixed bg-white opacity-100 visible flex justify-center md:hidden '>
+            <div class='absolute left-5 top-5' id="burger">
+                <img src="assets/Menu BUrger.png" alt="">
+            </div>
             <div class='w-20  flex justify-center'>
-            <img src="img/logobiere.png" alt="" >
+            <img src="assets/logobiere.png" alt="" >
+            </div>
+        </div>
+        <div id='header' class=''>
+            <div class='h-16 bg-fixed bg-white opacity-100 visible grid grid-cols-3 pt-5 font-Alphapipe md:hidden'>
+                <h1 class='flex justify-center '>Nos bières</h1>
+                <h1 class='flex justify-center '>Notre Histoire</h1>
+                <h1 class='flex justify-center '>Contactez-nous</h1>
+                
             </div>
         </div>
 
         <!--Image bar mobile-->
-        <img src="img/Imagebar.png" alt="" class='relative md:hidden '>
+        <img src="assets/Imagebar.png" alt="" class='relative md:hidden '>
 
         <!--Div page-->
-        <div class='md:h-full md:flex md:flex-row-reverse'>
+        <div class='md:flex md:flex-row-reverse items-center m-auto' style="height: 90%;">
             
             <!-- Logos prix + bio-->
-            <div class='opacity-90 flex w-full h-44 justify-center md:pr-20 md:h-full md:flex-col md:md:w-1/4'>
+            <div class='opacity-90 flex w-full h-44 justify-center md:justify-end md:pb-10 md:pr-20 md:h-full md:flex-col md:md:w-1/4'>
                 <div class='flex justify-end'>
-                    <img src="img/Médaille d'or.png" class='pt-12 pr-20 h-64' alt="">
+                    <img src="assets/Médaille d'or.png" class='pt-12 pr-20' alt="">
                 </div>
-                <div class='flex justify-end'>
-                    <img src="img/AB.png" class='pt-12 md:pr-20 h-64' alt="">
+                <div class='flex justify-end '>
+                    <img src="assets/AB.png" class='pt-12 md:pr-20 ' alt="">
                 </div>
                     
             </div> 
 
             <!--Slogan -->
-            <div class=" md:w-3/4">
-                <div class="md:mt-20 md:pl-48 md:w-3/4">
-                <h1 class='text-Title text-center md:text-left pt-20 font-LustScript text-2xl md:text-6xl md:pt-44 md:'>
+            <div class=" md:w-3/4 flex flex-col md:-mt-40">
+                <div class="md:pl-48 md:w-3/4">
+                <h1 class='text-Title text-center md:text-left pt-10 font-LustScript text-2xl md:text-6xl md:pt-20'>
                     Venez découvrir nos bières locales de caractère</h1>
                 </div>
                 <a href="#">
                 <div class='hidden md:grid grid-cols-3 w-80 h-16 border-2 rounded-lg border-black bg-white mt-48 ml-52'>
-                    <img src="img/icn biere.png" alt="" class="h-12 pl-4 mt-1">
+                    <img src="assets/icn biere.png" alt="" class="h-12 pl-4 mt-1">
                     <h1 class='col-span-2 text-center font-Alphapipe text-4xl mt-3 font-bold'>DÉCOUVRIR</h1>
                 </div></a>
             </div>
@@ -84,9 +95,131 @@
 
         </div>
 
-    </div>    
+    </div> 
+    
+    <div class="md:absolute -mt-48 md:mt-0">
+        <div class="flex flex-col h-screen w-screen lg:hidden -mb-96 md:mb-0">
+            <div class="h-1/3">
+                <img src="/assets/medailledor.png" alt="" class="absolute w-16 ml-2 mt-2">
+                <img src="/assets/biere1.png" alt="biere" class="">
+                
+            </div>
+            <div class="h-2/3 mt-10">
+                <div class="h-2/3 w-full absolute bg-[#9EB358] z-1">
+                    <img src="/assets/champ1.png" alt="" class="absolute h-full opacity-10 "/>
+                </div>
+                <div class="flex flex-col absolute z-2">
+                    <div>
+                    </div>
+                    <h2 class="text-6xl text-center text-white tracking-widest font-LustScript my-8 z-4">·  La Bote  ·</h2>
+                    <p class="text-xl mx-10 mb-28 text-justify text-white font-light tracking-widest leading-10">There are many variations of passages
+                        of Lorem Ipsum available, but the majority have
+                        suffered alteration in some form.</p>
+                    <!--AVIS-->
+                    <div class="flex flex-row justify-center mb-4">
+                        <img src="/assets/guillemets.png" alt="guillemets" class="w-2 h-2">
+                        <h1 class="mx-6 text-xl tracking-widest font-bold font-Alphapipe">Un délice pour le palais</h1>
+                        <img src="/assets/guillemets.png" alt="guillemets" class="w-2 h-2 rotate-180">
+                    </div>
+                    <h3 class="mb-2 text-base text-center tracking-widest italic">Le journal de la bière</h3>
+                    <!--etoile-->
+                    <div class="flex flex-row justify-center">
+                        <img src="/assets/stargold.png" alt="étoile" class="mx-1 w-4 h-4">
+                        <img src="/assets/stargold.png" alt="étoile" class="mx-1 w-4 h-4">
+                        <img src="/assets/stargold.png" alt="étoile" class="mx-1 w-4 h-4">
+                        <img src="/assets/stargold.png" alt="étoile" class="mx-1 w-4 h-4">
+                        <img src="/assets/stargrey.png" alt="étoile-grise" class="mx-1 w-4 h-4">
+                    </div>
+                </div>
+            </div>
+        </div>
         
+        <!--Screen 2-->
+        <div class="invisible md:visible">
+            <div class="top-0 w-3/4 bg-[#9EB358] w-full h-full min-h-screen z-1">
+                <img src="/assets/champ1.png" alt="" class="opacity-10 h-screen w-screen"/>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row absolute top-0">
+                <!--Partie gauche-->
+                <div class="flex items-center w-3/4 h-full min-h-screen">
+                    <!--Background vert transparent -->
+                    <div class="w-1/2 ml-28 z-3">
+                        <h2 class="text-8xl text-center text-white tracking-widest font-LustScript">·  La Bote  ·</h2>
+                        <p class="text-xl mt-20 text-justify text-white font-light tracking-widest leading-10">There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                            believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                            embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
+                            predefined chunks as necessary.</p>
+                    </div>
+                </div>
+        
+                <!--Partie droit-->
+                <div class="w-1/4 h-1/4 flex flex-col items-center mt-16 ">
+                    <!--guillemets-->
+                    <div class="flex flex-row mb-8">
+                        <img src="/assets/guillemets.png" alt="guillemets" class="w-5 h-5">
+                        <h1 class="mx-8 text-2xl tracking-widest font-bold font-Alphapipe">Un délice pour le palais</h1>
+                        <img src="/assets/guillemets.png" alt="guillemets" class="w-5 h-5 rotate-180">
+                    </div>
+                    <h3 class="mb-3 text-xl tracking-widest italic font-thin">Le journal de la bière</h3>
+                    <!--etoile-->
+                    <div class="flex flex-row">
+                        <img src="/assets/stargold.png" alt="étoile" class="m-1">
+                        <img src="/assets/stargold.png" alt="étoile" class="m-1">
+                        <img src="/assets/stargold.png" alt="étoile" class="m-1">
+                        <img src="/assets/stargold.png" alt="étoile" class="m-1">
+                        <img src="/assets/stargrey.png" alt="étoile-grise" class="m-1">
+                    </div>
+                </div>
+            </div>
+            <div class="absolute top-1/4 right-0 z-8 w-1/2">
+                <img src="/assets/medailledor.png" alt="" class="absolute w-36 ml-4 mt-4">
+                <img src="/assets/biere1.png" alt="biere" >
+            </div>
+        </div>
+        <div class="flex flex-col-reverse h-screen w-screen md:flex-row absolute -mt-96 md:mt-0">
+            <!--Version large -> partie gauche-->
+            <div class="flex flex-col bg-[#E2A306] md:bg-white md:justify-end md:items-center md:w-1/3 md:mb-16">
+                <div class="flex flex-row w-full justify-center">
+                    <img src="/assets/guillemets.png" alt="guillemets" class="w-5 h-5">
+                    <h1 class="mx-6 text-xl text-center tracking-widest font-bold font-Alphapipe md:mx-8">Un délice pour le palais</h1>
+                    <img src="/assets/guillemets.png" alt="guillemets" class="w-5 h-5 rotate-180">
+                </div>
+                <h3 class="mb-3 text-xl text-center tracking-widest italic font-thin">Le journal de la bière</h3>
+                <!--etoile-->
+                <div class="flex flex-row justify-center">
+                    <img src="/assets/stargold.png" alt="étoile" class="mx-1 w-4 h-4">
+                    <img src="/assets/stargold.png" alt="étoile" class="mx-1 w-4 h-4">
+                    <img src="/assets/stargold.png" alt="étoile" class="mx-1 w-4 h-4">
+                    <img src="/assets/stargold.png" alt="étoile" class="mx-1 w-4 h-4">
+                    <img src="/assets/stargrey.png" alt="étoile-grise" class="mx-1 w-4 h-4">
+                </div>
+            </div>
+            <!--Version large -> partie droite-->
+            <div class="h-screen md:w-screen md:h-screen w-screen bg-[#E2A306]">
+                <div class="h-2/3 invisible md:visible md:h-screen md:w-full">
+                    <img src="/assets/champ2.png" alt="" class="md:h-full md:opacity-5 "/>
+                </div>
+    
+                <div class="flex flex-col absolute top-0 md:flex md:flex-row md:justify-between md:items-center md:absolute md:left-0 md:bottom-1/4">
+                    <img src="/assets/biere2.png" alt="" class="md:w-1/2 border-y-8 border-r-8 border-white">
+                    <div class="text-black md:w-1/3 md:mr-16">
+                        <h2 class="text-center tracking-widest font-LustScript text-6xl my-8 md:text-8xl">·  La Bio  ·</h2>
+                        <p class="text-xl mx-10 text-justify font-light tracking-widest leading-10 md:text-xl md:mt-20">There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                            believable.<span class="invisible md:visible">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                                embarrassing hidden in the middle of text.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
+</body>   
+  
+    
 </html>
 
 <!--Tailwind config-->
@@ -95,7 +228,7 @@
       theme: {
         extend: {
             backgroundImage: {
-            'bar': "url('img/Imagebar.png')"
+            'bar': "url('assets/Imagebar.png')"
             },
             fontFamily: {
                 'LustScript': ['lust-script, sans-serif']  ,
@@ -104,8 +237,17 @@
             },
             colors: {
                 'Title' : '#FCC378',
-    }
+            }
         }
       }
     }
+
+    var header = document.getElementById("header");
+    var burger = document.getElementById("burger");
+
+    burger.addEventListener('click', function() {
+        if (header.classList.contains('hidden')){
+            header.classList.remove('hidden');
+        }
+        else header.classList.add('hidden');});
   </script>

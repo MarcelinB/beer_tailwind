@@ -1,0 +1,11 @@
+Grossir le logo l28 H249
+
+Lien taille 30
+
+#FCC378
+
+
+
+le point <svg id="Point" xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30">
+  <ellipse id="Ellipse_9" data-name="Ellipse 9" cx="15.5" cy="15" rx="15.5" ry="15" fill="#2e2e22"/>
+</svg>

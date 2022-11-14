@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
       
-    <title>Document</title>
+    <title>RhinBrasseur</title>
 </head>
 <body class='overflow-x-hidden'>
     <!--Background pour grand écran-->
@@ -17,14 +17,14 @@
        
         <!--Header grand écran-->
 
-        <div class=' mt-0 pt-0  h-24 bg-fixed bg-white opacity-70 hidden md:grid grid-cols-6 '>
+        <div class='mt-0 pt-0  h-24 bg-fixed bg-white hidden md:z-40 md:grid grid-cols-6 '>
 
-            <div class=' flex justify-center '>
+            <div class='flex justify-center '>
                 <img src="assets/logobiere.png" alt="" class="w-40 h-40 ">
             </div>
 
             <div class='col-start-3 flex justify-center pt-8 font-Alphapipe text-2xl font-bold'>
-                <a href="#">Nos bières</a>
+                <a href="#" >Nos bières</a>
                 <div class='w-3 h-3 bg-black rounded-2xl mt-3 ml-24 '></div>
             </div>
             
@@ -82,8 +82,8 @@
                 <h1 class='text-Title text-center md:text-left pt-10 font-LustScript text-2xl md:text-6xl md:pt-20'>
                     Venez découvrir nos bières locales de caractère</h1>
                 </div>
-                <a href="#">
-                <div class='hidden md:grid grid-cols-3 w-80 h-16 border-2 rounded-lg border-black bg-white mt-48 ml-52'>
+                <a href="#ancre">
+                <div class='hidden  md:grid-cols-3 md:w-80 md:h-16 md:border-2 md:rounded-lg md:border-black md:bg-slate-50 md:mt-48 md:ml-52 md:grid md:animate-bounce'>
                     <img src="assets/icn biere.png" alt="" class="h-12 pl-4 mt-1">
                     <h1 class='col-span-2 text-center font-Alphapipe text-4xl mt-3 font-bold'>DÉCOUVRIR</h1>
                 </div></a>
@@ -111,7 +111,7 @@
                 <div class="flex flex-col absolute z-2">
                     <div>
                     </div>
-                    <h2 class="text-6xl text-center text-white tracking-widest font-LustScript my-8 z-4">·  La Bote  ·</h2>
+                    <h2 class="text-6xl text-center text-white tracking-widest font-LustScript my-8 z-4" id="">·  La Bote  ·</h2>
                     <p class="text-xl mx-10 mb-28 text-justify text-white font-light tracking-widest leading-10">There are many variations of passages
                         of Lorem Ipsum available, but the majority have
                         suffered alteration in some form.</p>
@@ -140,9 +140,9 @@
                 <img src="/assets/champ1.png" alt="" class="opacity-10 h-screen w-screen"/>
             </div>
             
-            <div class="flex flex-col lg:flex-row absolute top-0">
+            <div id="ancre" class="flex flex-col lg:flex-row absolute top-0">
                 <!--Partie gauche-->
-                <div class="flex items-center w-3/4 h-full min-h-screen">
+                <div class="flex items-center w-3/4 h-full min-h-screen bg">
                     <!--Background vert transparent -->
                     <div class="w-1/2 ml-28 z-3">
                         <h2 class="text-8xl text-center text-white tracking-widest font-LustScript">·  La Bote  ·</h2>
@@ -157,7 +157,7 @@
                 <!--Partie droit-->
                 <div class="w-1/4 h-1/4 flex flex-col items-center mt-16 ">
                     <!--guillemets-->
-                    <div class="flex flex-row mb-8">
+                    <div class="flex flex-row mb-8 md:bg-white">
                         <img src="/assets/guillemets.png" alt="guillemets" class="w-5 h-5">
                         <h1 class="mx-8 text-2xl tracking-widest font-bold font-Alphapipe">Un délice pour le palais</h1>
                         <img src="/assets/guillemets.png" alt="guillemets" class="w-5 h-5 rotate-180">
@@ -180,7 +180,7 @@
         </div>
         <div class="flex flex-col-reverse h-screen w-screen md:flex-row absolute">
             <!--Version large -> partie gauche-->
-            <div class="flex flex-col bg-[#E2A306] md:bg-white md:justify-end md:items-center md:w-1/3 md:mb-16">
+            <div class="flex flex-col bg-[#E2A306] md:bg-white md:justify-end md:items-center md:w-1/3 md:mb-20">
                 <div class="flex flex-row w-full justify-center">
                     <img src="/assets/guillemets.png" alt="guillemets" class="w-5 h-5">
                     <h1 class="mx-6 text-xl text-center tracking-widest font-bold font-Alphapipe md:mx-8">Un délice pour le palais</h1>
@@ -197,16 +197,16 @@
                 </div>
             </div>
             <!--Version large -> partie droite-->
-            <div class="w-screen h-screen md:w-screen md:h-screen w-screen bg-[#E2A306]">
+            <div class="w-screen h-screen md:w-screen md:h-screen bg-[#E2A306]">
                 <div class="h-2/3 invisible md:visible md:h-screen md:w-full">
                     <img src="/assets/champ2.png" alt="" class="md:h-full md:opacity-5 "/>
                 </div>
     
-                <div class="flex flex-col absolute top-0 md:flex md:flex-row md:justify-between md:items-center md:items-center md:absolute md:left-0 md:bottom-1/4">
-                    <img src="/assets/biere2.png" alt="" class="md:w-1/2 border-y-8 border-r-8 border-white">
+                <div class="flex flex-col absolute top-0 md:bg-white md:flex md:flex-row md:justify-between md:items-center md:absolute md:left-0 md:bottom-1/4">
+                    <img src="/assets/biere2.png" alt="" class="md:w-1/2 border-y-[12px] border-r-[12px] border-white">
                     <div class="text-black md:w-1/3 md:mr-16">
                         <h2 class="text-center tracking-widest font-LustScript text-6xl my-8 md:text-8xl">·  La Bio  ·</h2>
-                        <p class="text-xl mx-10 text-justify font-light tracking-widest leading-10 md:text-xl md:mt-20">There are many variations of passages of Lorem Ipsum available, but the majority have
+                        <p class="text-xl mx-10 text-justify font-light tracking-widest leading-10 md:leading-10 md:text-xl md:mt-20">There are many variations of passages of Lorem Ipsum available, but the majority have
                             suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
                             believable.<span class="invisible md:visible">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
                                 embarrassing hidden in the middle of text.</span></p>
@@ -214,10 +214,62 @@
                 </div>
             </div>
         </div>
-
-        <!-- Notre Histoire-->
-
+    </div>
+    <!-- Notre Histoire-->
+    <div class="h-screen relative top-[900px] md:top-[1960px]">
         
+        <div class='w-screen h-screen md:bg-histoire bg-cover bg-center bg-no-repeat '>
+            <div class='w-full md:w-5/12 h-auto md:h-full bg-[#9EB358] opacity-95'>
+                <img src="assets/jean.png" class='md:hidden' alt="">
+                <h2 class="pt-10 text-center tracking-widest font-LustScript text-6xl md:text-8xl">Notre <br>·  histoire  ·</h2>
+                <p class="text-xl mx-10 text-justify font-light tracking-widest leading-10 md:leading-10 md:text-xl md:mt-20">There are many variations of passages of Lorem Ipsum available, but the majority have
+                    suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable.<span class="invisible md:visible">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                        embarrassing hidden in the middle of text.</span></p>
+    
+            </div>
+    
+        </div>
+    </div>
+    <div class="h-screen relative top-[1100px] md:top-[1960px]">
+        
+        <div class="flex flex-col md:h-screen">
+            <div class="flex w-full flex-col-reverse h-screen md:h-3/4 md:flex-row">
+                <!-- MAP -->
+                <div class="w-screen h-1/2 md:h-full md:w-3/5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5502956.645376434!2d2.9536489572491584!3d47.66517998827865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479184d145b748df%3A0xac075ef4e21d29eb!2sBrasserie%20Du%20Rhin!5e0!3m2!1sfr!2sfr!4v1668342938026!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="h-full w-full"></iframe>
+                </div>
+                <div class="text-center justify-center flex flex-col w-screen h-1/2 md:h-full md:w-2/5">
+                    <h1 class="font-bold w-full texte-slate-400 tracking-widest font-LustScript text-4xl my-4 md:my-10 md:text-6xl">Contactez-nous</h1>
+                    <form class="flex-col md:mx-52">
+                        <div class="my-4 mx-4 md:mx-0 md:my-0">
+                            <input type="text" name="Name" placeholder="Votre nom"
+                                class="outline-none border rounded-md border-slate-400 w-full py-1  focus:border-green-500 pl-1 md:my-4 md:hover:border-yellow-500">
+                        </div>
+                        <div class="my-4 mx-4 md:mx-0 md:my-0">
+                            <input type="text" name="email" placeholder="Votre email"
+                                class="outline-none border rounded-md w-full border-slate-400 py-1  focus:border-green-500 pl-1 md:my-4 md:hover:border-yellow-500 ">
+                        </div>
+                        <div class="my-4 mx-4 md:mx-0 md:my-0">
+                            <textarea
+                                class="outline-none border rounded-md w-full border-slate-400 py-1 h-28 focus:border-green-500  pl-1 md:h-40 md:my-4 md:hover:border-yellow-500"
+                                placeholder="Votre message"></textarea>
+                        </div>
+                        <div class="flex w-full items-center justify-center">
+                            <button type=""
+                            class="w-auto h-auto flex justify-center border-2 texte-slate-400 tracking-widest font-bold font-Alphapipe border-slate-500 rounded-md p-3 md:my-10 md:text-2xl hover:border-2 hover:border-yellow-500 hover:text-white hover:bg-yellow-500"><img src="./assets/icn biere.png" alt="" class="h-4 w-4 md:w-8 md:h-8">Envoyer</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            <footer class="w-full flex justify-around items-center bg-[#E2A306] opacity-80 md:h-1/4">
+                <h1>Plan du site</h1>
+                <img src="./assets/logobiere.png" alt="" class="w-16 h-16 md:w-44 md:h-44">
+                <h1>Adresse</h1>
+
+            </footer>
+        </div>
     </div>
     
 
@@ -232,7 +284,9 @@
       theme: {
         extend: {
             backgroundImage: {
-            'bar': "url('assets/Imagebar.png')"
+            'bar': "url('assets/Imagebar.png')",
+            'histoire': "url('assets/jean.png')"
+            }
             },
             fontFamily: {
                 'LustScript': ['lust-script, sans-serif']  ,
@@ -244,7 +298,7 @@
             }
         }
       }
-    }
+    
 
     var header = document.getElementById("header");
     var burger = document.getElementById("burger");
